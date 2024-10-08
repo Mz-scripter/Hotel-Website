@@ -1,0 +1,254 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+.rooms{
+    text-align: center;
+    margin-top: 60px;
+}
+.rooms h4,
+.rooms p{
+    margin: 0px;
+}
+.rooms h4{
+    font-size: 40px;
+}
+.second_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    row-gap: 30px;
+}
+.bath{
+    display: inline-block;
+    border-style: solid;
+    border-bottom: none;
+    border-left: none;
+    border-top: none;
+    border-color: #666565;
+    border-right-width: 1px;
+    padding: 0px;
+    margin: 0px;
+    background-color: pink;
+    width: auto;
+}
+.property{
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: end;
+    width: 87%;
+    margin: auto;
+}
+.Book{
+    border: none;
+    color: white;
+    background-color:#0F172B ;
+    width: 78%;
+    height: 100%;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.detail{
+    background-color: #FEA116;
+    border: none;
+    height: 40px;
+    width: 73%;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.detail:hover{
+    opacity: 0.8;
+}
+.property .correct{
+    width: 5%; 
+    display: inline-block; 
+    border-right-width: 1px black;
+    padding-left: 18px;
+    border-color: #666565;
+}
+.property p {
+    border-style: solid;
+    height: auto;
+    width: auto;
+    border-right-width: 1px;
+    border-bottom: 0px;
+    border-top: 0px;
+    color: #666565;
+    border-left: 0px;
+    border-color: #666565;
+    margin-right: 0px;
+    
+}
+.price2{
+    background-color: #FEA116;
+    position: absolute;
+    color: white;
+    left: 30px;
+    top: 235px;
+    
+}
+.price{
+    background-color: #FEA116;
+    position: absolute;
+    color: white;
+    left: 30px;
+    top: 235px;
+    z-index: 3;    
+}
+.price3{
+    background-color: #FEA116;
+    position: absolute;
+    color: white;
+    left: 30px;
+    top: 235px;
+}
+.star{
+    padding-left: 5px;
+}
+.our_rooms{
+    width: 95%;
+    position: relative;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0, 0.15);
+   
+    
+}
+.our_rooms .normal{
+    width: 100%;
+    position: relative;
+}
+.weird{
+    width: 100%;
+    height: 45%;
+    
+}
+.first_part{
+    width: 86%;
+    margin: auto;
+}
+.level{
+    color: #0F172B;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.video h4{
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.video{
+    background-color: #0F172B;
+    color: white;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 60px;
+}
+.services{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    column-gap: 30px;
+    padding: 20px;   
+    row-gap: 30px;
+}
+.services_info{
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+    position: relative;   
+}
+.colored{
+    z-index: 2;
+    
+}
+.un_colored{
+    position: absolute;
+    top:52px;
+    left: 193px;
+    z-index: 0;
+    opacity: 0;
+}
+.services_info .elegance{
+    color: #666565;
+}
+.services_info:hover{
+    transition: 0.5s;
+    background-color: #FEA116;
+    color: white;
+    
+}
+.social_media{
+    display: grid;
+   
+}
+.social_info{
+    background-color: #0F172B;
+    width: auto;
+    height: auto;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.services img {
+    width: 15%;
+}
+.info_section{
+    background-color: #0F172B;
+}
+.name{
+    background-color: #FEA116;
+    color: white;
+    padding: 20px 20px 10px 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 60%;
+}
+.whole_part{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    width: 88%;
+    margin: auto;
+    column-gap: 20px;
+}
+@media (max-width:780px){
+    .name{
+        width: 80%;
+        margin: auto;
+    }
+    .whole_part{
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .services{
+        grid-template-columns: 1fr;
+    }
+    .video{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .first_part{
+        padding-bottom: 40px;
+    }
+    .second_section{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+        row-gap: 30px;
+    }
+    .price2{
+        top: 225px;
+    }
+    .price3,
+    .price{
+        top: 215px;
+    }
+}
