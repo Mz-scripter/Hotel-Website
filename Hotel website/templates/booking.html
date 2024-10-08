@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imperial Crown</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/imperial.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/home.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/rooms.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/second_section_blw.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            
+            <div class="row align-items-center justify-content-between">
+                <div class="logo">
+                    <h1 style="color: #FEA116; font-size: 43px;">Imperial crown</h1>
+                </div>
+                <button class="navbar-toggler_1" id="navbar-toggler_1">
+                    &#9776; <!-- This is the hamburger icon -->
+                </button>
+                </label>
+                   <nav id="navbar-menu_1" class="navbar-nav_1">
+                        <ul>
+                            <li class="navbar-items"><a href="{{ url_for('home') }}">Home</a></li>
+                            <li class="navbar-items"><a href="#">About</a></li>
+                            <li class="navbar-items"><a href="#">Services</a></li>
+                            <li class="navbar-items"><a href="{{ url_for('rooms') }}"><span style="color:#FEA116;">Rooms</span></a></li>
+                            <li class="navbar-items dropdown"><a href="#" class="dropbtn">Pages &#9662</a>
+                                <div class="dropdown-content">
+                                    <a href="{{ url_for('booking') }}">Booking</a>
+                                    
+                                </div>
+                                
+                            </li>
+                            <li class="navbar-items"><a href="#">Contact</a></li>
+                        
+                        </ul>
+ 
+                    </nav> 
+            </div>
+        </div>
+    </header>
+    <div class="room_available">
+        <div class="room_avail_info">
+            <p style="color: white; font-size: 75px; font-weight: bolder; margin: 0px;">Booking</p>
+            <nav class="neither">
+                <ul>
+                    <li><a href="{{ url_for('home') }}" style="color: #FEA116;">HOME /</a></li>
+                    <li><a href="#" style="color: #FEA116;">PAGES /</a></li>
+                    <li><a href="{{ url_for('booking') }}" style="color: white;">BOOKING</a></li>
+                </ul>
+            </nav>
+        </div>
+        <img src="{{ url_for('static', filename='images/front_pic.webp') }}" width="100%" height="600px">
+        <div class="checks">
+            <input type="date" name="check_out" placeholder="Check Out" onfocus="(this.type='date')" onblur="(this.type='text')" id="dateInput" class="check_out">
+            <input type="date" name="check_in" placeholder="Check in" onfocus="(this.type='date')" onblur="(this.type='text')" id="dateInput" class="check_in">
+            <select name="adult" class="no_adult">
+                <option name="adult" id="adult">Adult</option>
+                <option name="adult1" id="adult1">Adult 1</option>
+                <option name="adult2" id="adult2">Adult 2</option>
+                <option name="adult3" id="adult3">Adult 3</option>
+            </select>
+            <select name="child" class="no_child">
+                <option name="child" id="child">Child</option>
+                <option name="child1" id="child1">Child 1</option>
+                <option name="child2" id="child2">Child 2</option>
+                <option name="child3" id="child3">Child 3</option>
+            </select>
+            <button type="submit" class="submit">SUBMIT</button>
+        </div>
+    
+    </div>
+    <section class="video">
+        
+        <div class="video_thumbnail">
+            <img src="{{ url_for('static', filename='images/video.jpg') }}" alt="a couple drinking wine" width="100%" height="100%">
+            <div class="play_button">
+                <div class="triangle"></div>
+            </div>
+        </div>
+        <div class="form-container">
+            <h2>LUXURY LIVING</h2>
+            <h3>Book A <span class="highlight">LUXURY ROOM</span></h3>
+            <form action="#" method="post">
+                <div class="input-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="input-group">
+                    <input type="date" name="check_in" placeholder="Check In" required>
+                    <input type="date" name="check_out" placeholder="Check Out" required>
+                </div>
+                <div class="input-group">
+                    <select name="adult" required>
+                        <option value="" disabled selected>Select Adult</option>
+                        <option value="1">Adult 1</option>
+                        <option value="2">Adult 2</option>
+                    </select>
+                    <select name="child" required>
+                        <option value="" disabled selected>Select Child</option>
+                        <option value="0">Child 0</option>
+                        <option value="1">Child 1</option>
+                        <option value="2">Child 2</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <select name="room" required>
+                        <option value="" disabled selected>Select A Room</option>
+                        <option value="room1">Room 1</option>
+                        <option value="room2">Room 2</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <textarea name="special_request" placeholder="Special Request" rows="3"></textarea>
+                </div>
+                <button type="submit">BOOK NOW</button>
+            </form>
+        </div>
+    
+        
+    </section>
+    <section class="info_section" style="margin-top: 90px;">
+        <div class="whole_part">
+            <div class="name">
+                <span style="font-size: 33px;font-weight: bolder;">Imperial Crown</span>
+                <p>Discover the crown jewel of luxury hospitality, designed for those who deserve the best.  
+                </p>
+            </div>
+            <div class="contact">
+                <span style="color: #FEA116; font-weight: bolder; font-size: 23px;display: block;">Contact</span>
+                <div style="padding: 0px;margin: 0px;">
+                    <img src="{{ url_for('static', filename='icons/mail-svgrepo-com.svg') }}" width="3%"><p style="display: inline-block;color: white;font-size: 16px;padding-left: 5px;">akinmoju4@gmail.com</p>
+                </div>
+                <div style="padding: 0px; margin: 0px;">
+                    <img src="{{ url_for('static', filename='icons/phone-call-phone-svgrepo-com.svg') }}" width="3%"><p style="display: inline-block;color: white;font-size: 16px;padding-left: 5px;">+2349069077225</p>
+                </div>
+                <div style="padding: 0px; margin: 0px;">
+                    <img src="{{ url_for('static', filename='icons/gps-svgrepo-com.svg') }}" width="3%"><p style="display: inline-block;color: white;font-size: 16px;padding-left: 5px;">Information Systems Dept</p>
+                </div>
+                
+            </div>
+          
+        </div>
+</section>
+     
+<script src="{{ url_for('static', filename='js/home.js') }}"></script>
+</body>
+</html>
